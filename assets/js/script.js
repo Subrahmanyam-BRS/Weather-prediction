@@ -9,7 +9,7 @@ const api_details = {
 }
 
 const input = document.querySelector('.input-search');
-input.addEventListener('keypress', showData)
+input.addEventListener('keypress', showData, )
 
 
 async function showResults(value) {
@@ -29,12 +29,15 @@ async function showResults(value) {
         fff.appendChild(ele)
     } else {
         displayData(fdata);
+    
     }
 }
 
 function showData(e) {
     if (e.keyCode === 13) {
+
         showResults(input.value);
+        
     }
 }
 
